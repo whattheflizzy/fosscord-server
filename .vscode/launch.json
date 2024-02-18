@@ -1,0 +1,21 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch current file",
+			"program": "${relativeFile}",
+			"request": "launch",
+			"skipFiles": ["<node_internals>/**"],
+			"type": "node"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Bundle",
+			"skipFiles": ["<node_internals>/**"],
+			"program": "${workspaceFolder}/src/bundle/start.ts",
+			"outFiles": ["${workspaceFolder}/dist/**/*.js"],
+			"preLaunchTask": "tsc: build - tsconfig.json"
+		}
+	]
+}

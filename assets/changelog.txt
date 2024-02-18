@@ -1,0 +1,10 @@
+---changelog---
+date: "2022-12-17"
+locale: "en-US"
+revision: 1
+---
+This is an example changelog. {added marginTop}
+======================
+
+This is a template changelog file.
+You can use the `npm run generate:changelog` script to attach a new version of this changelog to your current client cache.
